@@ -1,0 +1,640 @@
+/*Fonts*/
+@font-face {
+	font-family: "ProximaNovaRegular";
+  src: url(../fonts/proximanova-regular.otf);
+}
+@font-face {
+	font-family: "ProximaNovaBold";
+  src: url(../fonts/proximanova-bold.otf);
+}
+@font-face {
+	font-family: "Intro Regular";
+  src: url(../fonts/ofont.ru_Intro Regular.ttf);
+}
+/* End Fonts*/
+
+
+
+/*Block Header*/
+
+header {
+	max-width: 1920px;
+	margin: 0 auto;
+	height: 56px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.logo {
+	text-align: left;
+}
+
+.logo a {
+	display: inline-block;
+	line-height: 55px;
+	vertical-align: top;
+	margin-right: 10px;
+	font-size: 30px;
+	font-family: 'ProximaNovaRegular', Arial, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 10px;
+}
+
+.logo a:hover {
+	text-decoration: none;
+}
+
+
+.logo p {
+	display: inline-block;
+	padding: 10px 0 8px 0;
+	font-size: 13px;
+	font-family: 'ProximaNovaRegular', Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	text-shadow: 0 0 1px rgb(0,0,0);
+}
+
+
+.call-back {
+	text-align: right;
+	height: 56px;
+}
+
+.call-back p {
+	display: inline-block;
+	font-size: 35px;
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	margin: 0;
+	line-height: 55px;
+}
+
+.call-back a {
+	margin: 13px 0 11px 10px;
+	display: inline-block;
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	font-size: 13px;
+	padding: 7px 11px 5px 11px;
+	background: linear-gradient(#fd6c4a, #ff5456);
+	border-radius: 5px;
+	vertical-align: top;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 0 1px rgb(255,255,255);
+}
+
+.call-back a:hover {
+	text-decoration: none;
+	background: red;
+}
+/* End Block Header*/
+
+
+/*Block slider*/
+
+.slider-block {
+	background: url(../img/спальня-1s.jpg) no-repeat 50% 85%;
+}
+
+
+/*Block nav*/
+
+.nav {
+	text-align: center;
+	padding: 5px 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 0;
+}
+
+.nav a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'ProximaNovaRegular', Arial, sans-serif;
+	font-size: 14px;
+	color: #eff0f0;
+	padding: 0 64px;
+	border-right: 2px solid #ccc;
+	z-index: 9999;
+}
+
+.nav li:last-child a {
+	border-right: none;
+}
+
+.opened a {
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	font-weight: 600;
+	color: #fff;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+/* End Block nav*/
+
+
+/*Block Info*/
+
+.clear::before,
+.clear::after {
+  content: "";
+  display: table;
+}
+.clear::after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  *zoom: 1;
+}
+
+.container.info {
+	padding-top: 40px;
+}
+
+
+.info-line {
+	float: left;
+	height: 194px;
+	width: 3px;
+	background: rgba(255, 255, 255, .7);
+ 	transform: rotate(19deg);
+}
+
+.info-mural {
+	font-family: 'Intro Regular', Arial, sans-serif;
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: 900;
+	width: 531px;
+	text-align: center;
+	background: rgba(255, 255, 255, .7);
+	color: #000;
+	position: relative;
+	margin: 5px 0 10px 45px;
+	height: 109px;
+	line-height: 104px;
+}
+
+.info-mural::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left:  36px solid rgba(255, 255, 255, .7);
+	border-top: 0 solid transparent;
+	border-bottom: 110px solid transparent;
+	right: -36px;
+	top: 0;
+}
+
+.info-mural::before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-bottom: 109px solid rgba(255, 255, 255, .7);
+	border-left: 36px solid transparent;
+	border-right: 0 solid transparent;
+	left: -36px;
+	top: 0;
+}
+
+
+.info-place {
+	font-family: 'Intro Regular', Arial, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 900;
+	color: #000;
+	background: rgba(255, 255, 255, .7);
+	width: 240px;
+	height: 64px;
+	line-height: 45px;
+	text-align: center;
+	position: relative;
+	margin: 0 28px 0 2px;
+	display: inline-block;
+}
+
+.info-place::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left:  21px solid rgba(255, 255, 255, .7);
+	border-top: 0 solid transparent;
+	border-bottom: 64px solid transparent;
+	right: -21px;
+	top: 0;
+}
+
+.info-place::before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-bottom: 64px solid rgba(255, 255, 255, .7);
+	border-left: 22px solid transparent;
+	border-right: 0 solid transparent;
+	left: -22px;
+}
+
+.info-place hr {
+	width: 224px;
+	height: 3px;
+	margin: 0;
+	border: 0;
+	background: #000;
+	position: absolute;
+	bottom: 12px;
+	left: 7px;
+}
+
+.info-price {
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	width: 180px;
+	height: 52px;
+	background: linear-gradient(to right, #1ec91e, #068506);
+	font-family: 'Intro Regular', Arial, sans-serif;
+	font-size: 50px;
+	color: #fff;
+	font-weight: 900;
+	vertical-align: top;
+	line-height: 50px;
+}
+
+.info-price small,
+.info-price sup {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.info-price::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left:  16px solid #068506;
+	border-top: 0 solid transparent;
+	border-bottom: 52px solid transparent;
+	right: -16px;
+	top: 0;
+}
+
+.info-price::before {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-bottom: 52px solid #1ec91e;
+	border-left: 16px solid transparent;
+	border-right: 0 solid transparent;
+	left: -16px;
+}
+
+
+
+.idea {
+	color: #fff;
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	width: 315px;
+	font-size: 19px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 15px;
+	text-shadow: 1px 0 1px #000;
+}
+
+.see-ideas {
+	display: block;
+	width: 228px;
+	text-align: center;
+	color: #fff;
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	font-weight: 700;
+	font-size: 19px;
+	text-transform: uppercase;
+	padding: 10px 0 5px 0;
+	background: linear-gradient(#fd6d4a, #ff5555);
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin-left: 15px;
+	margin-bottom: 25px;
+}
+
+.see-ideas:hover {
+	text-decoration: none;
+	color: #fff;
+	background: red;
+}
+
+
+.slider-nav {
+	padding-left: 15px;
+	margin-bottom: 20px;
+}
+
+.slider-nav p,
+.slider-nav ul {
+	display: inline-block;
+}
+
+.nav-left,
+.nav-right {
+	outline: none;
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+
+.slider-nav ul {
+	margin: 0 20px;
+	padding: 0;
+}
+
+.checkbox-nav li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 17px;
+  padding: 2px;
+  position: relative;
+}
+
+.checkbox-nav li:last-child {
+	margin-right: 0;
+}
+
+.checkbox-nav-active span {
+  background: #fff;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.services {
+	padding-top: 25px;
+	text-align: center;
+	background: rgba(255, 255, 255, .7);
+}
+
+.services h4 {
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	font-size: 22px;
+	color: #000;
+	margin: 14px 0 8px 0	;
+}
+
+.services p {
+	margin-top: 0;
+	font-family: 'ProximaNovaBold', Arial, sans-serif;
+	font-size: 15px;
+	color: #000;
+	font-weight: 500;
+	text-shadow: 1px 0 1px #fff;
+}
+
+
+
+/*iPad Size*/
+ @media only screen and (min-width : 768px) and (max-width : 992px) {
+	
+	.logo,
+	.call-back {
+		padding: 0 5px;
+	}
+
+	.logo a,
+	.call-back a {
+		display: inline-block;
+	}
+	
+	.call-back p {
+		font-size: 26px;
+	}
+
+	.nav a {
+		font-size: 12px;
+		padding: 0 28px;
+	}
+
+	.container.info {
+		margin-left: 65px;
+	}
+
+ .info-bottom {
+ 	margin-left: 65px;
+ }
+
+}
+/*End iPad Size*/
+
+/* iPhone5 Size*/
+ @media only screen and (min-width : 320px) and (max-width : 767px) {
+	
+	.logo,
+	.call-back {
+		padding: 0 5px;
+		text-align: center;
+	}
+
+	.call-back {
+		margin-bottom: 46px;
+	}
+
+	.logo a {
+		font-size: 20px;
+	}
+
+	.logo p {
+		font-size: 11px;
+		padding: 12px 0 8px 0;
+	}
+	
+	.call-back p {
+		display: inline-block;
+		width: 100%;
+		font-size: 24px;
+	}
+
+	.call-back a {
+		display: inline-block;
+		width: 75%;
+		margin: 0;
+	}
+	
+	.nav {
+		background: none;
+	}
+
+	.nav a {
+		color: #000;
+		font-weight: 600;
+	}
+	
+	.nav a {
+		border-right: none;
+		width: 100%;
+	}
+
+	.nav li {
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.opened {
+		text-decoration: underline;
+	}
+	
+	
+	.container.info {
+		padding-top: 0;
+	}
+
+	.info-mural {
+		font-size: 26px;
+		width: auto;
+		height: 45px;
+		line-height: 43px;
+		text-align: center;
+		margin: 0 5px 10px 5px;
+		background: rgba(0, 0, 0, .7);
+		color: #fff;
+	}
+	
+	.info-line {
+		display: none;
+	}
+
+	.info-mural::after {
+		border-left:  15px solid rgba(0, 0, 0, .7);
+		border-top: 0 solid transparent;
+		border-bottom: 46px solid transparent;
+		right: -15px;
+	}
+
+	.info-mural::before {
+		border-bottom: 45px solid rgba(0, 0, 0, .7);
+		border-left: 15px solid transparent;
+		border-right: 0 solid transparent;
+		left: -15px;
+	}	
+	
+	.info-place {
+		font-size: 20px;
+		width: 93%;
+		height: 45px;
+		line-height: 34px;
+		margin: 0 5px 4px 9px;
+		background: rgba(0, 0, 0, .7);
+		color: #fff;
+	}
+	
+	.info-place::after {
+		border-left:  15px solid rgba(0, 0, 0, .7);
+		border-top: 0 solid transparent;
+		border-bottom: 46px solid transparent;
+		right: -15px;
+	}
+
+	.info-place::before {
+		border-bottom: 45px solid rgba(0, 0, 0, .7);
+		border-left: 15px solid transparent;
+		border-right: 0 solid transparent;
+		left: -15px;
+	}	
+
+	.info-place hr {
+		width: 92%;
+		height: 3px;
+		background: #fff;
+		position: absolute;
+		bottom: 5px;
+	}
+
+	.info-price {
+		width: 92%;
+		height: 45px;
+		font-size: 24px;
+		line-height: 44px;
+		text-align: center;
+		margin: 0 5px 4px 9px;
+	}
+
+	.info-price small,
+	.info-price sup {
+		font-size: 16px;
+	}
+
+	.info-price::after {
+		border-left:  16px solid #068506;
+		border-top: 0 solid transparent;
+		border-bottom: 45px solid transparent;
+		right: -16px;
+		top: 0;
+	}
+
+	.info-price::before {;
+		border-bottom: 45px solid #1ec91e;
+		border-left: 16px solid transparent;
+		border-right: 0 solid transparent;
+		left: -16px;
+	}
+
+	.idea {
+		text-align: center;
+		width: 90%;
+		font-size: 18px;
+		color: #000;
+		text-shadow: none;
+	}
+	
+
+	.see-ideas {
+		margin: 0 auto;
+		font-size: 16px;
+		padding: 5px 5px;
+		width: 176px;
+		margin-bottom: 40px;
+	}
+	.slider-nav img {
+		width: 50%;
+	}
+	
+	.checkbox-nav li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.checkbox-nav-active span {
+		width: 4px;
+		height: 4px;
+	}
+
+	.slider-nav {
+		text-align: center;
+	}
+}
+/* End iPhone5 Size*/
